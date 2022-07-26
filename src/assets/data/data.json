@@ -1,0 +1,23 @@
+{
+	"education": [
+		{
+			"Curso": "Curso Full Stack Python",
+			"titulo": "Desarrollador Full Stack Python",
+			"inicio": "2020",
+			"fin": "2020"
+		},
+		{
+			"Curso": "Curso de Reparación de P.C.",
+			"titulo": "Armado y Reparación de P.C.",
+			"inicio": "2018",
+			"fin": "2018"
+		},
+		{
+			"escuela": "Escuela Secundaria Técnica 5",
+			"titulo": "Técnico",
+			"career": "Electromecanico",
+			"inicio": "2011",
+			"fin": "2017"
+		}
+	]
+}
