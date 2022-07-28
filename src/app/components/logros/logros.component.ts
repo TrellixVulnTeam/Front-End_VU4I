@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { PorfolioService } from 'src/app/servicios/porfolio.service';
 @Component({
   selector: 'app-logros',
   templateUrl: './logros.component.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogrosComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private datosPorfolio: PorfolioService) { }
+proyectList: any;
+proyect1List: any;
   ngOnInit(): void {
+    this.datosPorfolio.obtnerDatos().subscribe(data => {
+      this.proyectList = data.proyect;
+this.proyect1List = data.proyect1;
+    })
   }
 
 }

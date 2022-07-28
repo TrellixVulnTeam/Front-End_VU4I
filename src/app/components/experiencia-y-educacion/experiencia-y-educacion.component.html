@@ -2,24 +2,13 @@
   <h1>Estudios</h1>
   <div class="col-lg-1"></div>
   <div class="col-lg-11">
-    <ul>
+    <ul *ngFor="let educacion of educacionList">
       <li>
-        <h1>Estudio 1</h1> - <h3>(years)</h3>
+        <h1>{{educacion.escuela}}</h1> - <h3>{{educacion.inicio}}-{{educacion.fin}}</h3>
       </li>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque reprehenderit officia quae deserunt, accusantium facere eveniet, laudantium iure cum non, magni dolore modi possimus qui nobis. Ea, repudiandae iure?</p>
+        <p>{{educacion.titulo}}</p>
     </ul>
-    <ul>
-      <li>
-        <h1>Estudio 2</h1> - <h3>(years)</h3>
-      </li>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque reprehenderit officia quae deserunt, accusantium facere eveniet, laudantium iure cum non, magni dolore modi possimus qui nobis. Ea, repudiandae iure?</p>
-    </ul>
-    <ul>
-      <li>
-        <h1>Estudio 3</h1> - <h3>(years)</h3>
-      </li>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque reprehenderit officia quae deserunt, accusantium facere eveniet, laudantium iure cum non, magni dolore modi possimus qui nobis. Ea, repudiandae iure?</p>
-    </ul>
+
   </div>
 </div>
 
@@ -28,23 +17,11 @@
   <h1>Experiencia laboral</h1>
   <div class="col-lg-1"></div>
   <div class="col-lg-11">
-    <ul>
+    <ul *ngFor="let trabajo of workList">
       <li>
-        <h1>Trabajo 1</h1> - <h3>(years)</h3>
+        <h1>{{trabajo.trabajo}}</h1> - <h3>{{trabajo.inicio}}-{{trabajo.fin}}</h3>
       </li>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque reprehenderit officia quae deserunt, accusantium facere eveniet, laudantium iure cum non, magni dolore modi possimus qui nobis. Ea, repudiandae iure?</p>
-    </ul>
-    <ul>
-      <li>
-        <h1>Trabajo 2</h1> - <h3>(years)</h3>
-      </li>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque reprehenderit officia quae deserunt, accusantium facere eveniet, laudantium iure cum non, magni dolore modi possimus qui nobis. Ea, repudiandae iure?</p>
-    </ul>
-    <ul>
-      <li>
-        <h1>Trabajo 3</h1> - <h3>(years)</h3>
-      </li>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque reprehenderit officia quae deserunt, accusantium facere eveniet, laudantium iure cum non, magni dolore modi possimus qui nobis. Ea, repudiandae iure?</p>
+      <p>{{trabajo.tarea}}</p>
     </ul>
   </div>
 </div>

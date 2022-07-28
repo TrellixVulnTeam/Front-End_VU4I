@@ -11,5 +11,5 @@ export class PorfolioService {
   constructor(private http: HttpClient) { }
 
 obtnerDatos():Observable<any>{
-  return this.http.get('./assets/data/data.json');}
+  return this.http.get('../assets/data/data.json');}
 }

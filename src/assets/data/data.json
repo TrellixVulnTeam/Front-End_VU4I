@@ -1,23 +1,90 @@
 {
-	"education": [
-		{
-			"Curso": "Curso Full Stack Python",
+	"mi": [{
+		"nombre": "Nahuel",
+"descripcion":"Estudiante",
+"acercade":"Acerca de mí",
+"sobremi":"Estudiando Analista de Sistemas",
+"img":"../assets/1.jpeg"
+	}],
+
+
+
+	"education":
+  [{
+
+    "escuela": "Instituto Superior de Formación Técnica N° 172",
+    "titulo": "Comenzando primer año de Analista de Sistemas",
+    "inicio": "2022",
+    "fin": "En curso"
+
+  }
+    ,{
+
+    "escuela": "Curso Gestión Informática",
+    "titulo": "Gestión Informática",
+    "inicio": "2020",
+    "fin": "2021"
+
+  },
+    {
+
+			"escuela": "Curso Full Stack Python",
 			"titulo": "Desarrollador Full Stack Python",
 			"inicio": "2020",
 			"fin": "2020"
+
 		},
+
 		{
-			"Curso": "Curso de Reparación de P.C.",
+
+			"escuela": "Curso de Reparación de P.C.",
 			"titulo": "Armado y Reparación de P.C.",
 			"inicio": "2018",
 			"fin": "2018"
+
 		},
+
 		{
+
 			"escuela": "Escuela Secundaria Técnica 5",
-			"titulo": "Técnico",
-			"career": "Electromecanico",
+			"titulo": "Técnico Electromecánico",
 			"inicio": "2011",
 			"fin": "2017"
+
 		}
-	]
+
+	],
+
+	"experience": [{
+    "trabajo": "Atención al público",
+    "inicio": "2017",
+    "fin": "Hasta la actualidad",
+    "tarea": "Me desarrollo en atención al público, vendiendo artículos de librería."
+
+  },{
+
+			"trabajo": "Alambre Rumbos S.A.",
+
+			"inicio": "2017",
+			"fin": "2017",
+			"tarea": "Me desarrolle como operario. Cumpliendo las pasantias."
+
+		}
+
+	],
+  "proyect":[
+    {"proyecto":"Estudio de abogados",
+    "desarrollo":"Este proyecto se realizo con C# como trabajo final de la materia. Simulando como trabaja un estudio de abogados.",
+    "img":"../assets/proy1.png"
+    }
+  ],"proyect1":[
+    {
+
+        "proyecto":"Contraseña",
+        "desarrollo":"Este proyecto se realizo con arduino y con el Proteus 8 Professional como trabajo final de la materia. Simulando como por ejemplo, una alarma de un negocio, cuando la contraseña es incorrecta y se enciende el led rojo. En caso contrario se enciende el led verde."
+        ,"img":"../assets/proy2.png","img1":"../assets/proy21.png","img2":"../assets/proy22.png"
+
+    }
+  ]
+
 }

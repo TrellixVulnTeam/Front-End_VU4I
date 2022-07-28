@@ -7,14 +7,13 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent implements OnInit {
-  miPortafolio:any;
+  mi:any;
   constructor(private datosPorfolio:PorfolioService) { }
 
   ngOnInit(): void {
     this.datosPorfolio.obtnerDatos().subscribe(data =>{
       console.log(data);
-      this.miPortafolio=data;
-    });
+      this.mi=data;});
 
   }
 
