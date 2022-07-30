@@ -85,6 +85,16 @@
         ,"img":"../assets/proy2.png","img1":"../assets/proy21.png","img2":"../assets/proy22.png"
 
     }
-  ]
+  ],
+  "proyect2":[{
+    "proyecto":"Conexión con base de datos",
+  "desarrollo":"Este proyecto se realizo con Python y SQLlite como proyecto personal. Simulando como es un programa de negocios .",
+  "img":"../assets/proy3.png"
+  }],
+  "proyect3":[{
+    "proyecto":"Portafolio Web",
+  "desarrollo":"Este proyecto es de Argentina Programa de la segunda parte #YoProgramo, con el fin de aprender lenguajes de Front-End y Back-End.",
+  "img":"../assets/proy4.png"
+  }]
 
 }
