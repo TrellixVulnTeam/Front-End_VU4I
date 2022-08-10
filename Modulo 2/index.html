@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porafolio</title>
+
+<!--link rel="stylesheet" href="style.css"-->
+<style>
+  body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    font-family: 'Arial';
+}
+
+
+header{
+    display: flex;
+    min-height: 100px;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.foto{
+    display: flex;
+    align-items: center;
+
+}
+.fotodelcv{
+    height: 100px;
+margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: white;
+}
+@media (max-width: 700px) {
+header{
+    flex-direction: column;
+}
+nav{
+    padding: 10px 0;
+}
+}
+</style>
+<!--Efectos-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+</head>
+
+
+
+<header>
+    <div class="foto">
+        <img src="1.jpeg" class="fotodelcv" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1500">
+        <h2 class="nombre" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1500">Nahuel</h2>
+    </div>
+
+    <nav>
+        <a href="#about" class="nav-link">About me</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+</header>
+
+
+
+<!--Boton de editar texto o agregar texto-->
+<div class="boton">
+<a href="#" class="btn-right">
+    <i class="fa fa-pencil"></i></a>
+  </div>
+  <div>
+    <p id="text-acercade">Programador</p>
+  </div>
+  <button type="button" onclick="cambiar_parrafo()"><img src="editor.jpg" alt="" width="25px" height="25px" justify-content="space-between"></button>
+ 
+ <div>
+    <input id="editor-acercade" type="text" oninput="myFunction(this.value)" style="display: none;">
+  </div>
+
+<!--para archivo de texto-->
+<!--input type="file" id="file1" onchange="showFile(this)"-->
+
+
+<script>
+function cambiar_parrafo(){
+  document.getElementById("editor-acercade").style.display="block";
+  let texto=document.getElementById("text-acercade").innerText;
+  console.log(texto);};
+
+  function myFunction(valor){
+    document.getElementById("text-acercade").innerText=valor;
+  }
+
+  function logMessage(message){
+    console.log(message + "<br>");
+  };
+
+let textarea=document.getElementById("editor-acercade")
+textarea.addEventListener('keyup',(e) =>{
+logMessage('Key "$(e.key)" released [event: keyup]');
+if(e.key=="Enter"){
+document.getElementById("editor-acercade").style.display="none"
+}});
+
+//para archivo de texto
+function showFile(input){
+let file = input.files[0];
+alert('File name: ${file.name}');
+alert('Last modified: ${file.lastModified}');
+
+let reader = new FileReader();
+reader.readAsText(file);
+reader.onload = function(){
+console.log(reader.result);
+document.getElementById("text-acercade").innerText=reader.result;
+};
+reader.onerror = function(){
+console.log(reader.error);
+};
+};
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
+
+
+
+
+
+
+<header>
+  <div>
+    <a id="about">About me</a>
+  </div>
+</header>
+<script src="index.js"></script>
+<script src="about.json"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Efectos-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <div>
+      <a id="contact">Contact</a>
+      <p>Tel</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
