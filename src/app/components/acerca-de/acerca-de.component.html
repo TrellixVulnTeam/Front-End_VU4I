@@ -1,17 +1,17 @@
 
 
 <div class="row">
-  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" *ngFor="let dato of miList">
-    <img [src]="dato.img" class="img-fluid" id="fotoperfil" alt="">
+  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" *ngFor="let mi of miList">
+    <img [src]="mi.img" class="img-fluid" id="fotoperfil" alt="">
   </div>
-  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" *ngFor="let dato of miList">
-    <p id="nombre">{{dato.nombre}}</p>
-    <p>{{dato.descripcion}}</p>
+  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" *ngFor="let mi of miList">
+    <p id="nombre">{{mi.nombre}} {{mi.apellido}}</p>
+    <p>{{mi.descripcion}}</p>
   </div>
-  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngFor="let dato of miList">
+  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngFor="let mi of miList">
     <span>
-      <h2>{{dato.acercade}}</h2>
-      <p id="text-acercade">{{dato.sobremi}}</p>
+      <h2>{{mi.acercade}}</h2>
+      <p id="text-acercade">{{mi.sobremi}}</p>
     </span>
   </div>
 </div>

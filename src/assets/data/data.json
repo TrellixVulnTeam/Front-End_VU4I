@@ -42,9 +42,16 @@
 			"inicio": "2018",
 			"fin": "2018"
 
-		},
+		},{
 
-		{
+      "escuela": "Universidad Nacional Arturo Jauretche",
+      "titulo": "Cursando segundo año de Ingenieria en Informática",
+      "inicio": "2018",
+      "fin": "En curso"
+
+    }
+
+		,{
 
 			"escuela": "Escuela Secundaria Técnica 5",
 			"titulo": "Técnico Electromecánico",
